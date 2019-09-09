@@ -31,6 +31,7 @@ extern NSString *const kMotionOrientationDebugDataKey;
 @property (readonly) UIInterfaceOrientation interfaceOrientation;
 @property (readonly) UIDeviceOrientation deviceOrientation;
 @property (readonly) CGAffineTransform affineTransform;
+@property (assign) NSTimeInterval debounceInterval; //Default: 0.3
 
 + (void)initialize;
 + (MotionOrientation *)sharedInstance;
